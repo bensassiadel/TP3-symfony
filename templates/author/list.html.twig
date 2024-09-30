@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document HTML5</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers une feuille de style CSS externe -->
+</head>
+<body>
+    <table border="1">
+    <tr>
+    <th>id</th>
+    <th>picture</th>
+    <th>username</th>
+    <th>email</th>
+     <th>nb_books</th>
+     </tr>
+     {% for a in authors %}
+     <tr>{{ a.id }}</tr>
+     <tr><img src="{{ a.picture }}"</tr>
+     <tr>{{ a.username }}</tr>
+     <tr>{{ a.email }}</tr>
+     <tr>{{ a.nb_books }}</tr>
+     <table/>
+     {% enfor %}
+     
+</body>
+</html>
+
+
+
